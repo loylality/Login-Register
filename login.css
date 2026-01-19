@@ -9,7 +9,7 @@
 
 .main-logo {
     margin-bottom: 30px;
-    /* logo আর form এর gap */
+    
     text-align: center;
     animation: floatLogo 1.5s ease-in-out infinite;
 }
@@ -21,12 +21,12 @@
 
     50% {
         transform: translateY(-20px);
-        /* উপরে যাবে */
+        
     }
 
     100% {
         transform: translateY(0);
-        /* আবার নিচে আসবে */
+    
     }
 }
 
@@ -89,7 +89,7 @@ body {
 .form-box.register {
     right: 0;
     padding: 0 15px 0 70px;
-    /* left বেশি, right কম */
+    
 }
 
 .form-box.register .animation {
@@ -342,5 +342,6 @@ body {
 .containr.active .curved-shape2 {
     transform: rotate(-11deg) skewY(-41deg);
     transition-delay: 1.2s;
+
 
 }
