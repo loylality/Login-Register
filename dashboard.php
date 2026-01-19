@@ -22,7 +22,7 @@ if(!isset($_SESSION['user_id'])){
 
 <body>
 
-<!-- CLOCK BOX (head থেকে body তে আনা হয়েছে) -->
+<!-- CLOCK BOX -->
 <div class="clock-box">
     <span id="time"></span><br>
     <small id="date"></small>
@@ -79,4 +79,5 @@ if(!isset($_SESSION['user_id'])){
 <script src="dashboard.js"></script>
 </body>
 </html>
+
 
