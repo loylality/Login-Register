@@ -26,7 +26,7 @@ if (isset($_POST['register'])) {
             $showLogin = false;
         } 
         else {
-            // ✅ Insert
+            
             $insert = $conn->query(
                 "INSERT INTO users (full_name, email, password) 
                  VALUES ('$full_name', '$email', '$password')"
@@ -34,7 +34,7 @@ if (isset($_POST['register'])) {
 
             if ($insert) {
                 $success = "Registration successful! Please login.";
-                $showLogin = true; // 👉 Login form show
+                $showLogin = true; 
             } else {
                 $error = "Something went wrong!";
                 $showLogin = false;
@@ -43,7 +43,7 @@ if (isset($_POST['register'])) {
     }
 }
 
-// Login handle
+
 if(isset($_POST['login'])){
     $email = $conn->real_escape_string($_POST['email']);
     $password = $_POST['password'];
@@ -57,7 +57,7 @@ if(isset($_POST['login'])){
         exit();
     } else {
         $error = "Invalid Email or Password";
-        $showLogin = true; // Show login form
+        $showLogin = true; 
     }
 }
 ?>
@@ -174,3 +174,4 @@ Your journey starts here.</p>
 </body>
 
 </html>
+
