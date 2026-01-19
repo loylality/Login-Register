@@ -4,10 +4,11 @@ const registerLink = document.querySelector('.signUpLink');
 
 registerLink.addEventListener('click', (e) => {
     e.preventDefault();
-    container.classList.add('active'); // Show register form
+    container.classList.add('active'); 
 });
 
 loginLink.addEventListener('click', (e) => {
     e.preventDefault();
-    container.classList.remove('active'); // Show login form
+    container.classList.remove('active'); 
 });
+
