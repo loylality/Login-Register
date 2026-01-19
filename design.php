@@ -13,13 +13,13 @@ if (isset($_POST['register'])) {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    // ❌ Password mismatch
+    // 
     if ($password !== $confirm_password) {
         $error = "Password and Confirm Password do not match!";
         $showLogin = false;
     } 
     else {
-        // ❌ Email exists check
+        
         $check = $conn->query("SELECT id FROM users WHERE email='$email'");
         if ($check->num_rows > 0) {
             $error = "This email is already registered!";
@@ -76,8 +76,8 @@ if(isset($_POST['login'])){
 <body>
         <div class="main-logo">
         <img src="images/images.png" alt="Logo">
-        <!-- অথবা text logo -->
-        <!-- <h1>Kawsar</h1> -->
+        
+        
     </div>
 
     <!-- MAKE A LOGIN FORM -->
@@ -172,4 +172,5 @@ Your journey starts here.</p>
      </div>
      <script src="login.js"></script>
 </body>
+
 </html>
